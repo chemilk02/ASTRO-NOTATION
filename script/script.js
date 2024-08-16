@@ -1,17 +1,17 @@
 //html 포함하기
-window.addEventListener('load', function() {
-  var allElements = document.getElementsByTagName('*');
-  Array.prototype.forEach.call(allElements, function(el) {
-    var includePath = el.dataset.includePath;
-    if (includePath) {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          el.outerHTML = this.responseText;
-          }
-        };
-        xhttp.open('GET', includePath, true);
-        xhttp.send();
-      }
-    });
-  });
+
+
+//click event - menu, close
+const gnbMenu = document.querySelector("#gnb-menu");
+const gnbClose = document.querySelector("#gnb-close");
+const sideNav = document.querySelector(".side-nav");
+const mainBannerText = document.querySelector("#main-banner-text");
+gnbMenu.addEventListener("click", ()=>{
+  sideNav.style.display = "flex";
+  mainBannerText.style.display = "none";
+})
+
+gnbClose.addEventListener("click", ()=>{
+  sideNav.style.display = "none";
+  mainBannerText.style.display = "flex";
+})
