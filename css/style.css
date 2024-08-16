@@ -174,7 +174,7 @@ figure {
 
     color: #fff;
 
-    background-image: url("/image/mainbannerimage.jpg");
+    background-image: url("cssimage/mainbannerimage.jpg");
     background-size: cover;
 }
 
