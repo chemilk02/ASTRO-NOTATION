@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+/*기본 폰트 설정*/
+html {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 12pt;
+    line-height: 0.6;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.0rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 1.0rem;
+}
+
