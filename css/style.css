@@ -108,7 +108,7 @@ header {
 
 nav {
     width: 90%;
-    min-width: 450px;
+    min-width: 300px;
     max-width: 1400px;
     height: 60px;
     border-radius: 18px;
@@ -175,7 +175,7 @@ header nav li:hover {
 .side-nav {
     width: 100%;
     max-width: 990px;
-    min-width: 450px;
+    min-width: 300px;
     height: 350px;
     
     position: relative;
