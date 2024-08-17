@@ -18,7 +18,12 @@ gnbClose.addEventListener("click", ()=>{
 
 //click event - login
 const gnbLogin = document.querySelector("#gnb-login");
+const modalPopupClose = document.querySelector("#modal-popup-close");
 const loginPopup = document.querySelector("#login-popup");
 gnbLogin.addEventListener("click", ()=>{
   loginPopup.style.display = "flex";
+})
+
+modalPopupClose.addEventListener("click", ()=>{
+  loginPopup.style.display = "none";
 })

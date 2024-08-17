@@ -326,27 +326,16 @@ figure {
     align-items: center;    
 }
 
-@media screen and (max-width: 768px) {
-    .modal-popup {
-        width: 450px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .modal-popup {
-        width: 90%;
-    }
-}
-
 #login-popup {
     display: none;
 }
 
 .modal-popup-title {
+    width: 80%;
     margin-top: 70px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -405,5 +394,23 @@ figure {
 @media screen and (max-width: 480px) {
     .copyright {
         font-size: 8pt;
+    }
+}
+
+#gnb-login {
+    display: flex;
+}
+
+#gnb-login-link {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    #gnb-login {
+        display: none;
+    }
+
+    #gnb-login-link {
+        display: flex;
     }
 }
