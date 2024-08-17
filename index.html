@@ -12,8 +12,39 @@
     </head>
     <body>
         <header>
-            <div include-html="navigation.html"></div>
-            <script>includeHTML();</script>
+            <nav>
+                <div class="logo-int">
+                    <img src="image/lightlogo.png" class="logo">
+                    <h4><a href="index.html">ASTRO NOTATION</a></h4>
+                </div>
+                <ul id="gnb">
+                    <li><a href="page/aboutus.html">소개</a></li>
+                    <li><a href="page/contents.html">컨텐츠</a></li>
+                    <li><a href="page/board.html">게시판</a></li>
+                    <li><a href="page/library.html">자료실</a></li>
+                    <li><a href="page/starmap.html">스타맵</a></li>
+                    <li><a href="page/metaverse.html">메타버스</a></li>
+                </ul>
+                <div class="btn-group">
+                    <button class="btn-sqr" id="gnb-menu">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                    <button class="btn-sqr" id="gnb-login">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </button>
+                    <button class="btn-sqr" id="gnb-login-link">
+                        <a href="page/library.html">
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                        </a>
+                    </button>
+                </div>
+            </nav>
         </header>
         <aside class="side-nav">
             <ul id="side-gnb">
@@ -39,6 +70,9 @@
         <section id="login">
             <div class="modal-popup" id="login-popup">
                 <div class="modal-popup-title">
+                    <div class="logo-int">
+                        <img src="image/lightlogo.png" class="logo">
+                    </div>
                     <h4>ASTRO NOTATION</h4>
                     <button class="btn-sqr" id="modal-popup-close">
                         <span class="material-symbols-outlined">
