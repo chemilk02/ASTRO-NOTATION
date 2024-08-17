@@ -192,12 +192,30 @@ header nav li:hover {
     }
 }
 
+#gnb-login {
+    display: flex;
+}
+
+#gnb-login-link {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    #gnb-login {
+        display: none;
+    }
+
+    #gnb-login-link {
+        display: flex;
+    }
+}
+
 /*사이드 네비게이션*/
 .side-nav {
     width: 100%;
     max-width: 990px;
     min-width: 300px;
-    height: 350px;
+    height: 300px;
     
     position: relative;
     display: flex;
@@ -288,6 +306,7 @@ figure {
 } 
 
 #main-banner-text h4 {
+    margin-bottom: 16px;
     text-align: center;
     line-height: 1.0;
 }
@@ -304,6 +323,42 @@ figure {
     }
 }
 
+#btn-login, #btn-login-link {
+    padding: 10px;
+    border-radius: 8px;
+
+    background-color: var(--primary-color);
+    color: var(--base-color1);
+}
+
+#btn-login:hover, #btn-login-link:hover {
+    background-color: var(--base-color1);
+    color: var(--primary-color);
+    -webkit-transition: .3s ease-in-out;
+}
+
+#btn-login h4, #btn-login-link h4 {
+    margin-bottom: 0px;
+}
+
+#btn-login {
+    display: flex;
+}
+
+#btn-login-link {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    #btn-login {
+        display: none;
+    }
+
+    #btn-login-link {
+        display: flex;
+    }
+}
+
 /*로그인 모달*/
 #login {
     width: 100%;
@@ -312,11 +367,12 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .modal-popup {
     width: 500px;
-    height: 570px;
+    height: 560px;
     border-radius: 16px;
 
     background-color: var(--base-color1);
@@ -332,7 +388,7 @@ figure {
 
 .modal-popup-title {
     width: 80%;
-    margin-top: 70px;
+    margin-top: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -381,6 +437,7 @@ figure {
 .login-info-link {
     height: 20px;
     width: 180px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -389,28 +446,14 @@ figure {
 .copyright {
     height: 20px;
     font-size: 10pt;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media screen and (max-width: 480px) {
     .copyright {
         font-size: 8pt;
-    }
-}
-
-#gnb-login {
-    display: flex;
-}
-
-#gnb-login-link {
-    display: none;
-}
-
-@media screen and (max-width: 1280px) {
-    #gnb-login {
-        display: none;
-    }
-
-    #gnb-login-link {
-        display: flex;
     }
 }
