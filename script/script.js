@@ -15,3 +15,10 @@ gnbClose.addEventListener("click", ()=>{
   sideNav.style.display = "none";
   mainBannerText.style.display = "flex";
 })
+
+//click event - login
+const gnbLogin = document.querySelector("#gnb-login");
+const loginPopup = document.querySelector("#login-popup");
+gnbLogin.addEventListener("click", ()=>{
+  loginPopup.style.display = "flex";
+})
