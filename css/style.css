@@ -291,6 +291,12 @@ article {
     align-items: left;
 }
 
+@media screen and (max-width: 768px) {
+    .text-card {
+        width: 100%;
+    }
+}
+
 .text-card-title {
     line-height: 1.0;
     margin-bottom: 16px;
