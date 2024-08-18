@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    margin: auto 0;
+}
+
 ul, ol {
     list-style: none;
 }
@@ -33,6 +38,21 @@ button {
     --small: 480px;
     --medium: 768px;
     --large: 1280px;
+}
+
+/*스크롤바 디자인*/
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 2.5px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--base-color1);
+    border-end-end-radius: 2.5px;
 }
 
 /*material design 아이콘*/
@@ -151,6 +171,74 @@ figure h6 {
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1280px) {
+    h1 {
+        font-weight: 900;
+        font-size: 2.0rem;
+    }
+    
+    h2 {
+        font-weight: 800;
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    
+    h5 {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    
+    h6 {
+        font-weight: 600;
+        font-size: 1.0rem;
+    }
+    
+    figure h1 {
+        font-weight: 900;
+        font-size: 2.0rem;
+        margin-bottom: 16px;
+    }
+    
+    figure h2 {
+        font-weight: 800;
+        font-size: 1.7rem;
+        margin-bottom: 16px;
+    }
+    
+    figure h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+    
+    figure h4 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+    }
+    
+    figure h5 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+    
+    figure h6 {
+        font-weight: 600;
+        font-size: 1.0rem;
+        margin-bottom: 16px;
+    }
+}
+
 /*아티클 설정*/
 article {
     width: 90%;
@@ -204,15 +292,11 @@ article {
 }
 
 .text-card-title {
-    font-weight: 700;
-    font-size: 2.0rem;
     line-height: 1.0;
     margin-bottom: 16px;
 }
 
 .text-card-exp {
-    font-weight: 500;
-    font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 16px;
 }
@@ -246,8 +330,6 @@ header {
 
 nav {
     width: 95%;
-    min-width: 300px;
-    max-width: 1400px;
     height: 60px;
     border-radius: 18px;
     padding: 10px;
@@ -409,8 +491,6 @@ figure {
 
 #main-banner-text {
     width: 100%;
-    min-width: 300px;
-    max-width: 1400px;
     height: calc(100vh - 80px);
     padding: 0% 5% 100px 5%;
 
