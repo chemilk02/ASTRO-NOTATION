@@ -1,6 +1,3 @@
-//html 포함하기
-
-
 //click event - menu, close
 const gnbMenu = document.querySelector("#gnb-menu");
 const gnbClose = document.querySelector("#gnb-close");
@@ -28,12 +25,12 @@ gnbLogin.addEventListener("click", ()=>{
   loginModal.style.display = "flex";
 })
 
-btnLogin.addEventListener("click", ()=>{
-  loginPopup.style.display = "flex";
-  loginModal.style.display = "flex";
-})
-
 modalPopupClose.addEventListener("click", ()=>{
   loginPopup.style.display = "none";
   loginModal.style.display = "none";
+})
+
+btnLogin.addEventListener("click", ()=>{
+  loginPopup.style.display = "flex";
+  loginModal.style.display = "flex";
 })

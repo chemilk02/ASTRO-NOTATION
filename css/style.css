@@ -78,7 +78,7 @@ html {
     font-family: 'Pretendard';
     font-weight: 400;
     font-size: 12pt;
-    line-height: 0.6;
+    line-height: 1.0;
 }
 
 h1 {
@@ -111,6 +111,52 @@ h6 {
     font-size: 1.0rem;
 }
 
+figure {
+    line-height: 1.6;
+}
+
+figure h1 {
+    font-weight: 900;
+    font-size: 3.0rem;
+    margin-bottom: 16px;
+}
+
+figure h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+figure h3 {
+    font-weight: 700;
+    font-size: 2.0rem;
+    margin-bottom: 16px;
+}
+
+figure h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+figure h5 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+figure h6 {
+    font-weight: 600;
+    font-size: 1.0rem;
+    margin-bottom: 16px;
+}
+
+/*아티클 설정*/
+article {
+    width: 90%;
+    margin-top: 32px;
+}
+
 /*버튼 설정*/
 .btn-sqr {
     width: 40px;
@@ -118,7 +164,7 @@ h6 {
     border-radius: 8px;
     margin-left: 10px;
 
-    background-color: var(--base-color2);
+    background-color: #fff;
 
     display: flex;
     justify-content: center;
@@ -137,10 +183,53 @@ h6 {
     align-items: center;
 }
 
+/*카드*/
+.card-bundle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: left;
+}
+.text-card {
+    width: 49%;
+    height: 350px;
+    padding: 10px;
+    margin-bottom: 2%;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.16);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.text-card-title {
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 1.0;
+    margin-bottom: 16px;
+}
+
+.text-card-exp {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.text-card-body {
+    line-height: 1.6;
+}
+
+#text-card-btn {
+    margin-left: calc(100% - 40px);
+}
+
 /*네비게이션*/
 header {
     width: 100%;
-    height: 100px;
+    height: 80px;
     Position: relative;
     padding: 0% 5%;
     display: flex;
@@ -149,14 +238,14 @@ header {
 }
 
 nav {
-    width: 90%;
+    width: 95%;
     min-width: 300px;
     max-width: 1400px;
     height: 60px;
     border-radius: 18px;
     padding: 10px;
 
-    background-color: var(--base-color1);
+    background-color: #fff;
 
     position: absolute;
     display: flex;
@@ -176,8 +265,6 @@ nav {
     height: 40px;
     border-radius: 8px;
 
-    background-color: var(--base-color2);
-
     margin-right: 10px;
 }
 
@@ -190,6 +277,10 @@ nav {
     .logo-int h4 {
         font-size: 1.2rem;
     }
+}
+
+#gnb {
+    margin-right: 211.16px;
 }
 
 header nav li {
@@ -255,6 +346,7 @@ header nav li:hover {
 
 .side-nav #side-gnb {
     width:100%;
+
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -302,7 +394,6 @@ header nav li:hover {
 figure {
     width: 100%;
 
-
     position: absolute;
     display: flex;
     justify-content: center;
@@ -313,7 +404,7 @@ figure {
     width: 100%;
     min-width: 300px;
     max-width: 1400px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     padding: 0% 5% 100px 5%;
 
     display: flex;
@@ -328,13 +419,11 @@ figure {
 }
 
 #main-banner-text h1 {
-    margin-bottom: 16px;
     text-align: center;
     line-height: 1.0;
 } 
 
 #main-banner-text h4 {
-    margin-bottom: 16px;
     text-align: center;
     line-height: 1.0;
 }
@@ -416,7 +505,11 @@ figure {
 
 .login-part a {
     width: 100%;
-    text-align: center;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-info {
@@ -455,7 +548,8 @@ figure {
 /*로그인 모달*/
 #login-modal {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
+
     position: absolute;
     display: flex;
     justify-content: center;
@@ -467,8 +561,9 @@ figure {
     width: 500px;
     height: 640px;
     border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16), 0 4px 8px rgba(0,0,0,0.23);
 
-    background-color: var(--base-color1);
+    background-color: #fff;
 
     display: flex;
     flex-direction: column;
@@ -495,8 +590,19 @@ figure {
 /*로그인 페이지*/
 #login {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
+
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside {
+    width: 100%;
+
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -505,6 +611,7 @@ figure {
 
 .login-title {
     height: 100px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -513,4 +620,10 @@ figure {
 
 .login-title h2 {
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .login-title h2 {
+        font-size: 2.0rem;
+    }
 }
