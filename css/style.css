@@ -69,6 +69,10 @@ button {
     color: #fff;
 }
 
+#apple .social-logo-img {
+    height: 40px;
+}
+
 /*기본 폰트 설정*/
 html {
     font-family: 'Pretendard';
@@ -239,7 +243,7 @@ header nav li:hover {
     width: 100%;
     max-width: 990px;
     min-width: 300px;
-    height: 300px;
+    height: 450px;
     
     position: relative;
     display: flex;
@@ -260,9 +264,9 @@ header nav li:hover {
 
 .side-nav #side-gnb li {
     width: 90%;
-    height: 40px;
+    height: 60px;
     border-radius: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     background-color: var(--base-color1);
 
@@ -497,4 +501,16 @@ figure {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.login-title {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title h2 {
+    margin-bottom: 50px;
 }
