@@ -192,7 +192,6 @@ article {
 }
 .text-card {
     width: 49%;
-    height: 350px;
     padding: 10px;
     margin-bottom: 2%;
 
@@ -200,7 +199,7 @@ article {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: left;
 }
 
@@ -224,6 +223,14 @@ article {
 
 #text-card-btn {
     margin-left: calc(100% - 40px);
+    
+    background-color: var(--base-color1);
+}
+
+#text-card-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+	-webkit-transition: .3s ease-in-out;
 }
 
 /*네비게이션*/
