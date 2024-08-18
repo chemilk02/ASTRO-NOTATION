@@ -262,7 +262,7 @@ article {
 .btn-sqr:hover {
     background-color: var(--primary-color);
     color: #fff;
-	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .btn-group {
@@ -320,7 +320,7 @@ article {
 #text-card-btn:hover {
     background-color: var(--primary-color);
     color: #fff;
-	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 /*네비게이션*/
@@ -391,7 +391,7 @@ header nav li {
 header nav li:hover {
     background-color: var(--primary-color);
     color: #fff;
-	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 @media screen and (max-width: 1280px) {
@@ -468,7 +468,7 @@ header nav li:hover {
 .side-nav #side-gnb li:hover {
     background-color: var(--primary-color);
     color: #fff;
-	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .side-nav #side-gnb li a {
@@ -544,7 +544,7 @@ figure {
 #btn-login:hover, #btn-login-link:hover {
     background-color: var(--base-color1);
     color: var(--primary-color);
-    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 #btn-login h4, #btn-login-link h4 {
