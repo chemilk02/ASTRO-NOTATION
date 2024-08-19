@@ -1,3 +1,5 @@
+self.onerror=function() { return true; } 
+
 //click event - menu, close
 const gnbMenu = document.querySelector("#gnb-menu");
 const gnbClose = document.querySelector("#gnb-close");

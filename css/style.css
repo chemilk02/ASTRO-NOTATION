@@ -245,6 +245,19 @@ article {
     margin-top: 32px;
 }
 
+.article-title {
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.article-title h1 {
+    margin-bottom: 0;
+}
+
 /*버튼 설정*/
 .btn-sqr {
     width: 40px;
@@ -265,10 +278,126 @@ article {
 	transition: .3s ease-in-out;
 }
 
-.btn-group {
+.btn-rtg {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+
+    background-color: var(--base-color2);
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-rtg:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    overflow: scroll;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.btn-group::-webkit-scrollbar {
+    display: none;
+}
+
+/*셀렉터*/
+.selector {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+
+    background-color: var(--base-color1);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.selector-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-shrink: 0;
+}
+
+.selector h5, .selector h6 {
+    line-height: 1.0;
+    margin-bottom: 0;
+}
+
+/*검색창*/
+.search-box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 16px;
+
+    background-color: var(--base-color1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+
+    background-color: var(--base-color2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar-text {
+    width: calc(100% - 50px);
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 8px;
+
+    background-color: var(--base-color2);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#btn-search {
+    background-color: var(--base-color2);
+}
+
+#btn-search-filter-open {
+    height: 20px;
+
+    background-color: var(--base-color1);
+
+    display: flex;
+}
+
+#btn-search-filter-close {
+    height: 20px;
+
+    background-color: var(--base-color1);
+
+    display: none;
 }
 
 /*카드*/
@@ -282,6 +411,7 @@ article {
     width: 49%;
     padding: 10px;
     margin-bottom: 2%;
+    border-radius: 16px;
 
     box-shadow: 0 1px 2px rgba(0,0,0,0.16);
 
@@ -427,7 +557,7 @@ header nav li:hover {
 /*사이드 네비게이션*/
 .side-nav {
     width: 100%;
-    max-width: 990px;
+    max-width: 1280px;
     min-width: 300px;
     height: 450px;
     
