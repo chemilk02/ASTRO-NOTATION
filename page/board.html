@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ABOUT US</title>
+        <title>BOARD</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <script defer src="../script/script.js"></script>
@@ -31,12 +31,14 @@
                         </span>
                     </button>
                     <button class="btn-sqr" id="gnb-login">
-                        <span class="material-symbols-outlined">
-                            account_circle
-                        </span>
+                        <a href="profile.html">
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                        </a>
                     </button>
                     <button class="btn-sqr" id="gnb-login-link">
-                        <a href="../page/login.html">
+                        <a href="proifle.html">
                             <span class="material-symbols-outlined">
                                 account_circle
                             </span>
@@ -70,28 +72,26 @@
                         <h5>카테고리</h5>
                     </div>
                     <div class="btn-group">
-                        <div class="btn-rtg">
+                        <div class="btn-rtg" id="free-subject">
                             <h6>자유주제</h6>
                         </div>
-                        <div class="btn-rtg">
+                        <div class="btn-rtg" id="astronomy">
                             <h6>천문학</h6>
                         </div>
-                        <div class="btn-rtg">
+                        <div class="btn-rtg" id="astro-photo-movie">
                             <h6>천체사진·영상</h6>
                         </div>
-                        <div class="btn-rtg">
+                        <div class="btn-rtg" id="request">
                             <h6>요청</h6>
                         </div>
-                        <div class="btn-rtg">
+                        <div class="btn-rtg" id="recuitment">
                             <h6>모집</h6>
                         </div>
                     </div>
                 </div>
                 <div class="search-box">
                     <div class="search-bar">
-                        <div class="search-bar-text">
-                            SEARCH
-                        </div>
+                        <input type="text" placeholder="SEARCH" class="search-bar-text"></input>
                         <div class="btn-sqr" id="btn-search">
                             <span class="material-symbols-outlined">
                                 search
@@ -111,52 +111,77 @@
                         </div>
                     </div>
                     <div class="search-filter">
-
+                        <div class="search-filter-a", id="search-filter-tag">
+                            <div class="selector-title">
+                                <h5>태그</h5>
+                            </div>
+                            <input type="text" placeholder="#TAG" class="search-filter-text"></input>
+                        </div>
+                        <div class="search-filter-a", id="search-filter-writer">
+                            <div class="selector-title">
+                                <h5>작성자</h5>
+                            </div>
+                            <input type="text" placeholder="EDITOR" class="search-filter-text"></input>
+                        </div>
+                        <div class="search-filter-a", id="search-filter-date">
+                            <div class="selector-title">
+                                <h5>작성일</h5>
+                            </div>
+                            <input type="date" placeholder="DATE" class="search-filter-text"></input>
+                        </div>
                     </div>
                 </div>
             </article>
+            <article>
+                <div class="article-box">
+                    <a href="board_sample.html" class="article-box-link">
+                        <div class="article-box-img"></div>
+                        <div class="article-box-text">
+                            <div class="article-box-title"><h3>어쩌구 저쩌구 출사 사진 모음</h3></div>
+                            <div class="article-box-info">아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다.</div>
+                            <div class="article-box-catag">
+                                <h5>카테고리: 천체사진·영상, 태그: 사진</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="article-box">
+                    <a href="" class="article-box-link">
+                        <div class="article-box-img"></div>
+                        <div class="article-box-text">
+                            <div class="article-box-title"><h3>어쩌구 저쩌구 출사 사진 모음</h3></div>
+                            <div class="article-box-info">아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다.</div>
+                            <div class="article-box-catag">
+                                <h5>카테고리: 천체사진·영상, 태그: 사진</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="article-box">
+                    <a href="" class="article-box-link">
+                        <div class="article-box-img"></div>
+                        <div class="article-box-text">
+                            <div class="article-box-title"><h3>어쩌구 저쩌구 출사 사진 모음</h3></div>
+                            <div class="article-box-info">아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다.</div>
+                            <div class="article-box-catag">
+                                <h5>카테고리: 천체사진·영상, 태그: 사진</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="article-box">
+                    <a href="" class="article-box-link">
+                        <div class="article-box-img"></div>
+                        <div class="article-box-text">
+                            <div class="article-box-title"><h3>어쩌구 저쩌구 출사 사진 모음</h3></div>
+                            <div class="article-box-info">아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다. 아름다운 우주의 어쩌구 저쩌구를 어떻게 찍어보았습니다.</div>
+                            <div class="article-box-catag">
+                                <h5>카테고리: 천체사진·영상, 태그: 사진</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </article>
         </figure>
-        <section id="login-modal">
-            <div class="modal-popup" id="login-popup">
-                <div class="modal-popup-title">
-                    <div class="logo-int">
-                        <img src="../image/lightlogo.png" class="logo">
-                    </div>
-                    <h4>ASTRO NOTATION</h4>
-                    <button class="btn-sqr" id="modal-popup-close">
-                        <span class="material-symbols-outlined">
-                            close
-                        </span>
-                    </button>
-                </div>
-                <div class="login-set">
-                    <div class="login-part" id="kakao">
-                        <img src="../image/kakao_symbol.png" class="social-logo-img">
-                        <a href="#">카카오로 시작하기</a>
-                    </div>
-                    <div class="login-part" id="naver">
-                        <img src="../image/naver_symbol.svg" class="social-logo-img">
-                        <a href="#">네이버로 시작하기</a>
-                    </div>
-                    <div class="login-part" id="google">
-                        <img src="../image/google_symbol.png" class="social-logo-img">
-                        <a href="#">구글로 시작하기</a>
-                    </div>
-                    <div class="login-part" id="apple">
-                        <img src="../image/apple_symbol.svg" class="social-logo-img">
-                        <a href="#">Apple로 계속하기</a>
-                    </div>
-                </div>
-                <div class="login-info">
-                    <div class="login-info-link">
-                        <a href="#">이용약관</a>
-                        <a href="#">개인정보처리방침</a>
-                    </div>
-                    <div class="copyright">
-                        <p>Copyright (c)ASTRO NOTATION. All rights reserved</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </body>
 </html>
